@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Datos y Algoritmos</title>
+</head>
+<body>
+    <h1>Estructuras de Datos y Algoritmos</h1>
+
+    <h2>1. Arrays (Arreglos)</h2>
+    <ul>
+        <li><strong>Definición y características</strong>: Estructuras de datos que almacenan elementos del mismo tipo.</li>
+        <li><strong>Operaciones básicas</strong>:
+            <ul>
+                <li><strong>Acceso</strong>: O(1), acceso por índice.</li>
+                <li><strong>Inserción</strong>: O(1) al final, O(n) en otras posiciones.</li>
+                <li><strong>Eliminación</strong>: Similar a la inserción.</li>
+            </ul>
+        </li>
+        <li><strong>Arrays multidimensionales</strong>: Arrays dentro de arrays, útiles para representar matrices.</li>
+    </ul>
+
+    <h2>2. Listas Enlazadas</h2>
+    <ul>
+        <li><strong>Listas enlazadas simples</strong>: Cada nodo apunta al siguiente nodo.</li>
+        <li><strong>Listas doblemente enlazadas</strong>: Nodos con punteros al nodo anterior y al siguiente.</li>
+        <li><strong>Listas circularmente enlazadas</strong>: El último nodo apunta al primero.</li>
+        <li><strong>Operaciones básicas</strong>:
+            <ul>
+                <li><strong>Inserción</strong>: O(1) en el inicio, O(n) en otras posiciones.</li>
+                <li><strong>Eliminación</strong>: O(n), depende de la posición.</li>
+                <li><strong>Búsqueda</strong>: O(n), recorrido de la lista.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Pilas (Stacks)</h2>
+    <ul>
+        <li><strong>Principio LIFO</strong>: Último en entrar, primero en salir.</li>
+        <li><strong>Operaciones</strong>:
+            <ul>
+                <li><strong>Push</strong>: Insertar en el tope.</li>
+                <li><strong>Pop</strong>: Eliminar del tope.</li>
+                <li><strong>Peek</strong>: Ver el elemento en el tope sin eliminarlo.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Colas (Queues)</h2>
+    <ul>
+        <li><strong>Principio FIFO</strong>: Primero en entrar, primero en salir.</li>
+        <li><strong>Tipos de colas</strong>:
+            <ul>
+                <li><strong>Colas simples</strong></li>
+                <li><strong>Colas circulares</strong></li>
+                <li><strong>Colas de prioridad</strong></li>
+            </ul>
+        </li>
+        <li><strong>Operaciones</strong>:
+            <ul>
+                <li><strong>Enqueue</strong>: Insertar al final.</li>
+                <li><strong>Dequeue</strong>: Eliminar del frente.</li>
+                <li><strong>Front</strong>: Ver el elemento en el frente.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. Árboles</h2>
+    <ul>
+        <li><strong>Árbol binario</strong>: Cada nodo tiene hasta dos hijos.</li>
+        <li><strong>Árbol de búsqueda binaria (BST)</strong>: Nodos organizados según su valor.</li>
+        <li><strong>Árbol AVL</strong>: BST autobalanceado.</li>
+        <li><strong>Árbol B</strong>: Árbol generalizado.</li>
+        <li><strong>Árbol N-ario</strong>: Cada nodo puede tener hasta N hijos.</li>
+        <li><strong>Operaciones</strong>:
+            <ul>
+                <li>Inserción, eliminación, recorrido (inorden, preorden, postorden).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>6. Grafos</h2>
+    <ul>
+        <li><strong>Definición y representación</strong>:
+            <ul>
+                <li><strong>Matriz de adyacencia</strong></li>
+                <li><strong>Lista de adyacencia</strong></li>
+            </ul>
+        </li>
+        <li><strong>Tipos</strong>:
+            <ul>
+                <li>Grafos dirigidos y no dirigidos</li>
+                <li>Grafos ponderados y no ponderados</li>
+            </ul>
+        </li>
+        <li><strong>Algoritmos básicos</strong>:
+            <ul>
+                <li>BFS (búsqueda en anchura)</li>
+                <li>DFS (búsqueda en profundidad)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>7. Tablas Hash</h2>
+    <ul>
+        <li><strong>Concepto de función hash</strong>: Convierte entradas en índices.</li>
+        <li><strong>Manejo de colisiones</strong>:
+            <ul>
+                <li>Encadenamiento</li>
+                <li>Direccionamiento abierto</li>
+            </ul>
+        </li>
+        <li><strong>Operaciones básicas</strong>: Inserción, búsqueda, eliminación.</li>
+    </ul>
+
+    <h2>Algoritmos</h2>
+    
+    <h3>1. Algoritmos de Ordenación</h3>
+    <ul>
+        <li><strong>Bubble Sort</strong>: O(n²)</li>
+        <li><strong>Insertion Sort</strong>: O(n²)</li>
+        <li><strong>Selection Sort</strong>: O(n²)</li>
+        <li><strong>Quick Sort</strong>: O(n log n)</li>
+        <li><strong>Merge Sort</strong>: O(n log n)</li>
+        <li><strong>Heap Sort</strong>: O(n log n)</li>
+    </ul>
+
+    <h3>2. Algoritmos de Búsqueda</h3>
+    <ul>
+        <li><strong>Búsqueda lineal</strong>: O(n)</li>
+        <li><strong>Búsqueda binaria</strong>: O(log n)</li>
+        <li><strong>DFS y BFS en grafos</strong></li>
+    </ul>
+
+    <h3>3. Algoritmos de Grafos</h3>
+    <ul>
+        <li><strong>Dijkstra</strong>: Camino más corto en grafos ponderados.</li>
+        <li><strong>Bellman-Ford</strong>: Camino más corto con pesos negativos.</li>
+        <li><strong>Floyd-Warshall</strong>: Camino más corto entre todos los pares.</li>
+        <li><strong>Kruskal</strong>: Árbol de expansión mínima.</li>
+        <li><strong>Prim</strong>: Árbol de expansión mínima.</li>
+    </ul>
+
+    <h3>4. Programación Dinámica</h3>
+    <ul>
+        <li><strong>Concepto</strong>: Divide un problema en subproblemas y guarda soluciones.</li>
+        <li><strong>Problemas clásicos</strong>: Mochila, secuencia de Fibonacci.</li>
+    </ul>
+
+    <h3>5. Divide y Vencerás</h3>
+    <ul>
+        <li><strong>Concepto</strong>: Divide un problema en partes más pequeñas.</li>
+        <li>Ejemplos: Merge Sort, Quick Sort, búsqueda binaria.</li>
+    </ul>
+
+    <h3>6. Complejidad Computacional</h3>
+    <ul>
+        <li><strong>Notación Big O</strong>: Mide el rendimiento de los algoritmos.</li>
+        <li>Tiempo y espacio, mejor y peor caso.</li>
+    </ul>
+
+    <h3>7. Técnicas de Optimización</h3>
+    <ul>
+        <li><strong>Estrategias</strong>: Simplificar problemas, usar estructuras más eficientes.</li>
+        <li><strong>Técnicas de poda</strong>: Como poda alfa-beta en juegos.</li>
+    </ul>
+</body>
+</html>
